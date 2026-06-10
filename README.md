@@ -60,37 +60,38 @@ indonesian-news-intelligence/
 
 ## 🛠️ Installation & Local Setup
 
-1. Clone the Repository
-```bash
-git clone [https://github.com/farhanahmadn/indonesian-news-scrapper.git](https://github.com/farhanahmadn/indonesian-news-scrapper.git)
-cd indonesian-news-scrapper
-```
+1. **Clone the Repository**
+    ```bash
+    git clone [https://github.com/farhanahmadn/indonesian-news-scrapper.git](https://github.com/farhanahmadn/indonesian-news-scrapper.git)
+    cd indonesian-news-scrapper
+    ```
 
-2. Install Dependencies
-```bash
-pip install -r requirements.txt
-```
+2. **Install Dependencies**
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-3. Environment Configuration
-Create a .env file in the root directory based on the .env.example template:
+3. **Environment Configuration**
+    Create a .env file in the root directory based on the .env.example template:
 
-Code snippet
-SUPABASE_URL=[https://your-project-id.supabase.co](https://your-project-id.supabase.co)
-SUPABASE_KEY=your-supabase-anon-or-service-role-key
-GROQ_API_KEY=your-groq-api-key-here
+    ```Code snippet
+    SUPABASE_URL=[https://your-project-id.supabase.co](https://your-project-id.supabase.co)
+    SUPABASE_KEY=your-supabase-anon-or-service-role-key
+    GROQ_API_KEY=your-groq-api-key-here
+    ```
 
-4. Running the Pipeline
-You can run both workers independently in separate terminal sessions or deploy them as background daemons:
-
-Run the News Aggregator (Runs periodically every 30 minutes):
-```bash
-python scraper.py
-Run the AI & Enrichment Pipeline (Runs periodically every 45 minutes):
-```
-
-```bash
-python ai_pipeline.py
-```
+4. **Running the Pipeline**
+    You can run both workers independently in separate terminal sessions or deploy them as background daemons:
+    
+    Run the News Aggregator (Runs periodically every 30 minutes):
+    ```bash
+    python scraper.py
+    Run the AI & Enrichment Pipeline (Runs periodically every 45 minutes):
+    ```
+    
+    ```bash
+    python ai_pipeline.py
+    ```
 
 🔒 Security Note
 > *This project adheres to professional security practices. All API credentials, access tokens, and cloud database strings are strictly managed via environment variables (python-dotenv) and ignored by Git tracking rules to avoid credential leaks* <.
