@@ -86,7 +86,7 @@ indonesian-news-intelligence/
     Run the News Aggregator (Runs periodically every 30 minutes):
     ```bash
     python scraper.py
-    Run the AI & Enrichment Pipeline (Runs periodically every 45 minutes):
+    Run the AI & Enrichment Pipeline (Runs periodically every 30 minutes):
     ```
     
     ```bash
